@@ -21,8 +21,12 @@ colnames(tennis_atp) <- c("Tournament",
 tennis_atp <- tennis_atp[-1, ]
 
 # A function that takes in a dataset and returns a list of info about it:
+# Install and load the dplyr package
+install.packages("dplyr")
+library(dplyr)
+
 summary_info <- list()
 summary_info$num_observations <- nrow(tennis_atp)
-summary_info$some_max_value <- tennis_atp %>%
-  filter(some_var == max(, na.rm = T)) %>%
-  select(some_label)
+summary_info$Rank_1 <- tennis_atp %>%
+  filter(Rank_1 == max(Rank_1, na.rm = T)) %>%
+  select(Rank_1)
