@@ -135,6 +135,10 @@ manually, which was quite laborious and difficult.
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
+```{r, echo = FALSE, code = readLines("summary.R")}
+```
+
+
 ### Table
 
 Include a table of aggregate information
@@ -150,7 +154,7 @@ Describe why you chose this chart and what information it reveals
 Here's an example of how to run an R script inside an RMarkdown file:
 
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-```
+``````
 
 ### Chart 2
 
