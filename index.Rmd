@@ -141,10 +141,24 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 ### Table
 
-Include a table of aggregate information
+A table of aggregated data that looks at the average Ranks and Points score on each recorded tennis court surface
 
-Describe why you included the table and what information it reveals
+<br>
+<br>
+```{r, echo = FALSE, fig.align = 'center', code = readLines("aggregate_data_table.R")}
+```
+<br>
+<br>
 
+This table is important to understand in the context of this report because it
+demonstrates the general performance on and reputation of each court surface
+throughout the course of all recorded tennis matches. For instance, we can see
+that while a Hard surface is by far the most popular among all the observances, the players who play on it have the lowest rank. Meanwhile, Clay and Grass are played on fewer times; however players have a much higher rank on those surfaces. Therefore, it is logical to assume that the Clay and Grass
+surfaces might have a reputation of being harder to perform on, explaining both
+their lesser uses, as well as the high ranking of those who do play on them. This sentiment would also be supported by the fact that the average points on the latter surfaces are lower than that on a Hard surface. This information is especially interesting to note because of the context of our first Chart, which is looking at the court surface distribution by tournament series. In this sense, we can combine the information from both data visualizations and maybe gain insight into the reputation of a certain tournament and its players if they favor a particular court surface.
+
+<br>
+<br>
 <br>
 
 ### Chart 1 - Court Surface Distribution Among Series
