@@ -1,5 +1,5 @@
-library(dplyr)
-library(tidyverse)
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(tidyverse))
 
 # Loading data
 tennis_data <- read.csv("tennis_atp_3.csv")
