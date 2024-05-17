@@ -142,7 +142,11 @@ A table of aggregated data that looks at the average Ranks and Points score on e
 
 <br>
 <br>
-```{r, echo = FALSE, fig.align = 'center', code = readLines("aggregate_data_table.R")}
+```{r load-table, echo = FALSE, results = 'asis', message = FALSE, warning = FALSE}
+library(dplyr)
+library(tidyverse)
+library(knitr)
+source("aggregate_data_table.R")
 ```
 <br>
 <br>

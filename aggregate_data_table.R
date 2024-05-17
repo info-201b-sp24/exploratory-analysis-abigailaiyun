@@ -37,17 +37,18 @@ tennis_data <- tennis_data %>%
 aggregated_data <- tennis_data %>%
   group_by(Surface) %>%
   summarise(
-    Number_of_Matches = n(),
-    Average_Rank1 = round(mean(Rank_1, na.rm = TRUE), digits = 2),
-    Average_Rank2 = round(mean(Rank_2, na.rm = TRUE), digits = 2),
-    Average_Points1 = round(mean(Pts_1, na.rm = TRUE), digits = 2),
-    Average_Points2 = round(mean(Pts_2, na.rm = TRUE), digits = 2)
+    Num_Matches = n(),
+    Avg_Rank1 = round(mean(Rank_1, na.rm = TRUE), digits = 2),
+    Avg_Rank2 = round(mean(Rank_2, na.rm = TRUE), digits = 2),
+    Avg_Points1 = round(mean(Pts_1, na.rm = TRUE), digits = 2),
+    Avg_Points2 = round(mean(Pts_2, na.rm = TRUE), digits = 2)
   ) %>%
   ungroup()
 
 
 # Meaningfully sorted table
-aggregated_data <- arrange(aggregated_data, desc(Number_of_Matches))
+aggregated_data <- arrange(aggregated_data, desc(Num_Matches))
 
-# View table
-view(aggregated_data)
+# Fitting for Rmd/html file
+tennis_table <- kable(aggregated_data, format = "html", tennis_table.attr = "class='table table-striped'")
+print(tennis_table)
