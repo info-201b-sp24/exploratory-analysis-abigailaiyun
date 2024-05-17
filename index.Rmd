@@ -135,9 +135,6 @@ manually, which was quite laborious and difficult.
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
-```{r, echo = FALSE, code = readLines("summary.R")}
-```
-
 
 ### Table
 

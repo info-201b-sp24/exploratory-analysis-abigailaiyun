@@ -4,7 +4,7 @@
 
 # Load the required libraries
 library(ggplot2)
-library(dplyr)
+suppressPackageStartupMessages(library(dplyr))
 
 # Read the CSV file
 tennis_data <- read.csv("tennis_atp_3.csv")
