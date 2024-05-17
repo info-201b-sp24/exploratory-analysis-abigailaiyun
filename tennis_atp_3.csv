@@ -1,4 +1,11 @@
+<<<<<<< Updated upstream
 tennis_atp,,,,,,,,,,,,,,
+=======
+<<<<<<< HEAD
+=======
+tennis_atp,,,,,,,,,,,,,,
+>>>>>>> 3d624a5e53c802040cb51048e839d4ad419a82e4
+>>>>>>> Stashed changes
 Tournament,Date,Series,Court,Surface,Round,Best of,Player_1,Player_2,Winner,Rank_1,Rank_2,Pts_1,Pts_2,score
 Brisbane International,12/31/2012,ATP250,Outdoor,Hard,1st Round,3,Mayer F.,Giraldo S.,Mayer F.,28,57,1215,778,6-4 6-4
 Brisbane International,12/31/2012,ATP250,Outdoor,Hard,1st Round,3,Benneteau J.,Nieminen J.,Nieminen J.,35,41,1075,927,3-6 6-2 1-6
