@@ -145,25 +145,69 @@ Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
-### Chart 1
+<br>
 
-Include a chart
+### Chart 1 - Court Surface Distribution Among Series
 
-Describe why you chose this chart and what information it reveals
+Using a multi-bar chart for this visualization was the most suitable choice as it allows for clear comparison of the number of matches played on each surface within each series. By having three differently colored bars for each series, viewers can easily discern the distribution of court surfaces across the different levels of tournaments that the ATP offers.
 
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+<br>
+<br>
+``````{r, echo = FALSE, fig.align='center', code = readLines("chart1.R")}
 ``````
+<br>
+<br>
 
-### Chart 2
+Based on the chart, it can seen that that the most prevalent surface across all series that's played on is hard. The dominance of hard courts could be attributed to various factors, including their durability, lower maintenance costs compared to grass, and the consistency they offer in terms of ball bounce and playability, which makes them suitable for a broad range of playing styles. It can also be observed that Grass is the least prevalent type of surface played on, even being entirely nonexistent on the prestigious Masters 1000 level.
 
-Include a chart
+Insights from such a chart can extend beyond surface distribution. For instance, the predominance of hard courts might influence the development of players, as those who excel on this surface might have more opportunities to compete and succeed at higher levels. This could also affect regional training facilities and junior development programs, potentially leading to a greater emphasis on hard court skills.
 
-Describe why you chose this chart and what information it reveals
+Additionally, the limited number of grass tournaments could impact player preparation and performance during the grass season, notably affecting events like Wimbledon. Players might have less time to adjust to the unique conditions of grass courts, influencing their strategies and possibly leading to a higher rate of unexpected outcomes or injuries.
 
-### Chart 3
+<br>
+<br>
+<br>
 
-Include a chart
+### Chart 2 - Player Ranking Over Time (@ Specific Tournament)
 
-Describe why you chose this chart and what information it reveals
+A line plot is the most suitable visualization for depicting a specific player's ranking at a particular tournament over time due to its ability to illustrate trends over time clearly and effectively. With a continuous time axis, the plot accurately portrays the player's ranking evolution year by year, allowing viewers to distinguish patterns and changes in performance easily. Furthermore, the connection between data points provides a smooth representation of the trend, assisting in identifying performance trajectories. 
+
+<br>
+<br>
+``````{r, echo = FALSE, fig.align='center', code = readLines("chart2.R")}
+``````
+<br>
+<br>
+
+Observations vary depending on the player and tournament selected. For a consistently top-ranked player, such as Novak Djokovic at the Australian Open, the line plot would show a generally stable ranking within the top positions, often near the top ranks, with minor fluctuations reflecting injuries or poor performance in past seasons. In contrast, a mid-ranked player like John Isner at Wimbledon might exhibit more fluctuations, highlighting inconsistency or improvement over time. For an emerging player, such as Carlos Alcaraz in his early years, the plot could reveal a sharp upward trend, with rankings improving significantly, showcasing the player's development.
+
+Coaches can use this data to identify patterns and trends in a player’s performance at that tournament, allowing them to tailor training and preparation strategies accordingly. For instance, if a player’s ranking shows significant improvement in certain years, coaches can analyze the factors that contributed to these successes and seek to replicate them. Conversely, if the rankings indicate periods of decline, coaches can investigate potential issues such as injuries, strategic missteps, or mental factors that might have impacted performance.
+
+Players can also benefit from this analysis by gaining a clearer understanding of their historical performance at a specific tournament. This knowledge can boost their confidence if the trend shows improvement or consistent high rankings. It can also help them set realistic goals and focus on specific areas for improvement if the data reveals a pattern of poor performance. By reflecting on their past rankings, players can develop a more informed approach to their preparation, both mentally and physically, for future iterations of the tournament.
+
+<br>
+<br>
+<br>
+
+### Chart 3 - Tournament Title Wins by Player
+
+A standard bar graph for visualizing the number of tournament wins at a specific tournament between three given players at a time was the most suitable chart type for several reasons. For one, bar graphs are highly effective for comparing discrete categories, making them ideal for showcasing the number of wins each player has achieved. By representing each player with a separate bar, the graph allows for easy visual comparison of their performance.
+
+<br>
+<br>
+``````{r, echo = FALSE, fig.align='center', code = readLines("chart3.R")}
+``````
+<br>
+<br>
+
+A standard bar chart depicting the number of tournament wins at a specific tournament for three players like the Big Three—Novak Djokovic, Roger Federer, and Rafael Nadal—reveals varying insights depending on the tournament selected. In the case of the Australian Open from 2013 to 2023, the chart shows that Djokovic clearly dominates, with seven title wins, compared to Federer's two and Nadal's one. This highlights Djokovic's exceptional performance and consistency at the Australian Open, positioning him as the most successful player at this tournament during the specified period and players chosen to examine.
+
+However, if the chart were to focus on the French Open instead, the narrative would shift dramatically. Rafael Nadal's dominance on clay courts would be unmistakable, with a significantly higher number of title wins compared to Djokovic and Federer. Such a chart would emphasize Nadal's unparalleled success at the French Open, where he has been the dominant titleholder for more than a decade, highlighting his dominance on this surface.
+
+Insights derived from this bar chart can be valuable for players and coaches. Understanding which tournaments a player excels at can help tailor training regimens specific to those events. For Djokovic, the data reinforces his stronghold on the Australian Open, suggesting that his preparation strategies and playing style are well-suited to the conditions in Melbourne. For Nadal, a similar chart for the French Open would highlight the importance of his clay-court training.
+
+Additionally, for coaches, such a chart can inform decisions about tournament scheduling and focus areas for improvement. It can guide them in optimizing their player's performance by replicating successful strategies from tournaments where they have historically excelled and addressing weaknesses evident from tournaments with fewer wins. Overall, this visual representation of tournament wins provides a clear, comparative insight into each player's dominance at specific events, offering a strategic tool for enhancing future performances.
+
+<br>
+<br>
+<br>
