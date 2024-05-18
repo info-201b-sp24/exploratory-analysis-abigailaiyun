@@ -131,33 +131,31 @@ manually, which was quite laborious and difficult.
 
 > Lastly, while we’re projecting to perform various types of statistical models and analyses based on historical ATP data, our current knowledge may not be sufficient to bring those results to fruition effectively. Our goals within this project are tentative and subject to change based on our understanding of data programming and the complexity of the tasks involved. As we progress, we may discover that our initial objectives exceed our current skill level or require more advanced techniques than anticipated. In such cases, we will adapt our goals to better align with our capabilities. Addressing these challenges proactively is crucial for ensuring the responsible and effective application of data analytics in the tennis industry.
 
-### Summary Information
+<br>
+<br>
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-``````{r, echo = FALSE, fig.align='center', code = readLines("summary.R")}
-``````
+### Summary Information
+```{r summary, echo=FALSE, message=FALSE}
+library(dplyr)
+source("summary.R")
+```
+Our analysis revealed that of all the playing surfaces, **`r most_popular_surface$Surface` court** was most popular with **`r most_popular_surface$n` total matches** played. In addition, **`r max_series$Series`** was the most popular series with a total of **`r max_series$n` number of matches** played. While analyzing our data, we took a particular focus to Serbian tennis champion, Novak Djokovic. We found that in the Australian open, Djokovic had an average player **rank of `r djokovic_avg_rank_au`** making him one of the top ranked players for this particular tournament. He secured a total of **`r top_player$win_count` wins**. As of the most recent date, Djokovic played **`r recent$Player_2` in the `r recent$Tounrament`** with a final score of **`r recent$score`, marking `r recent$Winner`** the winner! A tough loss for our world champion.
+
+<br>
+<br>
+<br>
 
 ### Table
 
 A table of aggregated data that looks at the average Ranks and Points score on each recorded tennis court surface
 
 <br>
-<br>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-``````{r, echo = FALSE, fig.align = 'center', code = readLines("aggregate_data_table.R")}
-``````
-=======
->>>>>>> Stashed changes
 ```{r load-table, echo = FALSE, results = 'asis', message = FALSE, warning = FALSE}
 library(dplyr)
 library(tidyverse)
 library(knitr)
 source("aggregate_data_table.R")
 ```
->>>>>>> db7ca1e14ff3afb0eef22af1b2c0e6439e3af0cc
-<br>
 <br>
 
 This table is important to understand in the context of this report because it
